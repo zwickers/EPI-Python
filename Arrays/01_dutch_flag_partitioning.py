@@ -23,7 +23,7 @@ def dutch_flag_partitioning(A,pivot_index):
         elif A[i] == pivot:
             i += 1
         else: # A[i] > pivot
-            A[i],A[greater], A[greater], A[i]
+            A[i],A[greater] = A[greater], A[i]
             greater -= 1
 
 # each iteration decreases the size of unclassified by 1, and the time spent on each
