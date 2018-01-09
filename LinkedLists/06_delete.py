@@ -10,7 +10,7 @@ class ListNode:
         self.next = next
 
 # Time complexity: O(1)
-def(node_to_delete):
+def delete_node(node_to_delete):
     # copy the next node's value
     node_to_delete.data = node_to_delete.next.data
     # update the current node's next pointer to skip the next node
