@@ -5,9 +5,9 @@
 #
 
 class ListNode:
-    def __init__(self,data,next):
+    def __init__(self,data):
         self.data = data
-        self.next = next
+        self.next = None
 
 # Time complexity: O(1)
 def delete_node(node_to_delete):
