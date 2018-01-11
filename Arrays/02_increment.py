@@ -11,12 +11,13 @@ def increment(A):
         A[i] += 1
     else:
         # during the stretch of 9's, keep setting the individual element to 0,
-        # until you reach an element is not 9, then increment that element
+        # until you reach an element that is not 9, then increment that element
         while A[i] == 9:
             # handles the edge case where the entire array is all 9's
             if i == 0:
                 A[i] = 0
                 A.insert(0,1)
+                return
             A[i] = 0
             i -= 1
         A[i] += 1
